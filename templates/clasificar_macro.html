@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block title%} Clasificador macronutrientes {% endblock %}
+
+{% block contenido %}
+
+<div class="card" style="width: 18rem;">
+<h5 class="card-header" style="background-color: lightskyblue;">Clasificacion de macronutrientes</h5>
+  <div class="card-body">
+  <table class="table">
+    <div class="row">
+    <h4>Lista de alimentos clasificados</h4> <button type="button" class="btn btn-danger w-25">Limpiar lista</button>
+    </div>
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Alimento</th>
+      <th scope="col">Calorias totales</th>
+      <th scope="col">Clasificacion principal</th>
+      <th scope="col">% predominante</th>
+      <th scope="col">Grasas (g)</th>
+      <th scope="col">Proteinas (g)</th>
+      <th scope="col">Carbs (g)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"></th>
+      <td>Banana</td>
+      <td>Sopa</td>
+      <td>Arroz</td>
+    </tr>
+    <tr>
+      <th scope="row"></th>
+      <td>120</td>
+      <td>40</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <th scope="row"></th>
+      <td>John</td>
+      <td>Doe</td>
+      <td>@social</td>
+    </tr>
+        <tr>
+      <th scope="row"></th>
+      <td>Banana</td>
+      <td>Sopa</td>
+      <td>Arroz</td>
+    </tr>
+    <tr>
+      <th scope="row"></th>
+      <td>120</td>
+      <td>40</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <th scope="row"></th>
+      <td>John</td>
+      <td>Doe</td>
+      <td>@social</td>
+    </tr>
+  </tbody>
+</table>
+
+{% endblock %}

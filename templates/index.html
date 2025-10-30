@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+
+{% block title%} Formulario nutricional {% endblock %}
+
+{% block contenido %}
+<div class="d-flex justify-content-center">
+<div class="card align-middle" style="width: 50rem; height: 75%;">
+    <h5 class="card-header text-center" style="background-color: lightskyblue;">Clasificador de alimento</h5>
+<div class="card-body">
+<form>
+<div class="mb-3">
+    <label for="alimento" class="form-label">Nombre del alimento</label>
+    <input type="text" class="form-control" id="alimento" aria-describedby="alimento">
+</div>
+<div class="mb-3">
+    <label for="grasas" class="form-label">Grasas (g)</label>
+    <input type="number" class="form-control" id="text">
+</div>
+    <div class="mb-3">
+    <label for="proteinas" class="form-label">Proteinas (g)</label>
+    <input type="number" class="form-control" id="proteinas" aria-describedby="proteinas">
+</div>
+<div class="mb-3">
+    <label for="carbohidratos" class="form-label">Carbohidratos (g)</label>
+    <input type="number" class="form-control" id="carbohidratos">
+</div>
+<button type="submit" class="btn btn-primary">Clasificar y añadir</button>
+</form>
+</div>
+</div>
+</div>
+<br><br>
+
+#parte del codigo para ir visualizando mi calsificar_macro
+<table class="table">
+    <div class="row">
+    <h4>Lista de alimentos clasificados</h4> <button type="button" class="btn btn-danger w-25">Limpiar lista</button>
+    </div>
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Alimento</th>
+      <th scope="col">Calorias totales</th>
+      <th scope="col">Clasificacion principal</th>
+      <th scope="col">% predominante</th>
+      <th scope="col">Grasas (g)</th>
+      <th scope="col">Proteinas (g)</th>
+      <th scope="col">Carbs (g)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"></th>
+      <td>Banana</td>
+      <td>Sopa</td>
+      <td>Arroz</td>
+    </tr>
+    <tr>
+      <th scope="row"></th>
+      <td>120</td>
+      <td>40</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <th scope="row"></th>
+      <td>John</td>
+      <td>Doe</td>
+      <td>@social</td>
+    </tr>
+        <tr>
+      <th scope="row"></th>
+      <td>Banana</td>
+      <td>Sopa</td>
+      <td>Arroz</td>
+    </tr>
+    <tr>
+      <th scope="row"></th>
+      <td>120</td>
+      <td>40</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <th scope="row"></th>
+      <td>John</td>
+      <td>Doe</td>
+      <td>@social</td>
+    </tr>
+  </tbody>
+</table>
+
+{% endblock %}
